@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="journal.css">
 </head>
 <body>
-    <h1> Hey There!</h1>
+  <div class="drake-container">
+    <img src="Drake2.png">
+    <h1>Daily Journal Entry</h1>
+  </div>  
+  <div class="container">
+    <form action="" class="journal-form"> 
+        <fieldset>
+            <label for="JournalDate">Date of Entry</label>
+            <input type="date" name="JournalDate">
+        </fieldset>
+        <fieldset>
+            <label for="JournalConcepts">Concepts Covered</label>
+            <textarea class="text-box" wrap="hard" rows="7" type="text" name="JournalConcepts"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="JournalEntry">Journal Entry</label>
+            <textarea class="text-box" wrap="hard" rows="10" type="text" name="JournalEntry"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="JournalMood">Mood for the day</label>
+            <select name="moods">
+                <option value="happy">Happy</option>
+                <option value="excited">Excited</option>
+                <option value="frustrated">Frustrated</option>
+                <option value="Burn">Burn it all down</option>
+                <option value="Neautral">Neutral</option>
+            </select>
+        </fieldset>
+    </div>
+</form>
+<button class="submit-button" type="submit" form="DailyJournal" value="submit">Submit Entry</button>
+<script src="../src/scripts/journal.js"></script>
 </body>
 </html>
