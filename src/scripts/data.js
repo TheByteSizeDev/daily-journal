@@ -1,4 +1,4 @@
-// fetch("http://localhost:3000/entries") 
+// fetch("http://localhost:3000/entries")
 //     .then(data => data.json())  // Parse as JSON
 //     .then(entries => {
 //         renderJournalEntries(entries)
@@ -12,8 +12,9 @@ for the application. The responsbility for how the
 application should operate should reside in src/scripts/journal.js now. */
 
 const API = {
-    getJournalEntries () {
-        return fetch("http://localhost:3000/entries")
-            .then(response => response.json())
-    }
-}
+  getJournalEntries() {
+    return fetch("http://localhost:3000/entries").then(response =>
+      response.json()
+    );
+  }
+};

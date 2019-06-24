@@ -138,12 +138,11 @@ const renderJournalEntries = entries => {
 
 renderJournalEntries(objectsJournalEntry); // This passes ALL journal entries
 
-
 // ************************ Daily Journal 4 ****************************
 
 // Fetch from the API
-fetch("http://localhost:3000/entries") 
-    .then(data => data.json())  // Parse as JSON
-    .then(entries => {
-        renderJournalEntries(entries)
-    })
+fetch("http://localhost:3000/entries")
+  .then(data => data.json()) // Parse as JSON
+  .then(entries => {
+    renderJournalEntries(entries);
+  });

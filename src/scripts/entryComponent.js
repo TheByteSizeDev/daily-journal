@@ -1,5 +1,5 @@
-const makeJournalEntryComponent = (journalEntry) => {
-    return `
+const makeJournalEntryComponent = journalEntry => {
+  return `
     <div>
         <h1>Journal Entry</h1>
         <h3>Date: ${journalEntry.date}</h3>
@@ -7,5 +7,5 @@ const makeJournalEntryComponent = (journalEntry) => {
         <p>Journal Entry: ${journalEntry.journal_entry}</p>
         <p>Mood: ${journalEntry.mood}</p>
     </div>
-    `
-}
+    `;
+};
