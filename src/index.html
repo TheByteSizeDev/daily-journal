@@ -16,19 +16,19 @@
     <form action="" class="journal-form"> 
         <fieldset>
             <label for="JournalDate">Date of Entry</label>
-            <input type="date" name="JournalDate">
+            <input type="date" id="date" name="JournalDate">
         </fieldset>
         <fieldset>
             <label for="JournalConcepts">Concepts Covered</label>
-            <textarea class="text-box" wrap="hard" rows="7" type="text" name="JournalConcepts"></textarea>
+            <textarea class="text-box" id="concepts" wrap="hard" rows="7" type="text" name="JournalConcepts"></textarea>
         </fieldset>
         <fieldset>
             <label for="JournalEntry">Journal Entry</label>
-            <textarea class="text-box" wrap="hard" rows="10" type="text" name="JournalEntry"></textarea>
+            <textarea class="text-box" id="entry" wrap="hard" rows="10" type="text" name="JournalEntry"></textarea>
         </fieldset>
         <fieldset>
             <label for="JournalMood">Mood for the day</label>
-            <select name="moods">
+            <select id="mood" name="moods">
                 <option value="happy">Happy</option>
                 <option value="excited">Excited</option>
                 <option value="frustrated">Frustrated</option>
@@ -36,9 +36,9 @@
                 <option value="Neautral">Neutral</option>
             </select>
         </fieldset>
+    </form>
     </div>
-</form>
-<button class="submit-button" type="submit" form="DailyJournal" value="submit">Submit Entry</button>
+<button class="submit-button" id="submit-btn" type="submit" form="DailyJournal" value="submit">Submit Entry</button>
 
 <article class="entryLog" id="entry_log">
 
@@ -47,6 +47,7 @@
 <script src="../src/scripts/data.js"></script>
 <script src="../src/scripts/entryComponent.js"></script>
 <script src="../src/scripts/entriesDOM.js"></script>
+<script src="../src/scripts/event.js"></script>
 <script src="../src/scripts/journal.js"></script>
 </body>
 </html>
