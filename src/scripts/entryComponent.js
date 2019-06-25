@@ -9,3 +9,14 @@ const makeJournalEntryComponent = journalEntry => {
     </div>
     `;
 };
+
+/* make a function to create an object for the entry*/
+const makeJournalObject = (date, concept, journalEntry, mood) => {
+  return ({
+    date: date,
+    concepts: concept,
+    journal_entry: journalEntry,
+    mood: mood
+  })
+}
+

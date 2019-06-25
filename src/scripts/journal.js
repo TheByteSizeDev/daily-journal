@@ -7,6 +7,8 @@
 */
 
 API.getJournalEntries().then(renderJournalEntries);
+triggerListener()
+
 
 //objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
 

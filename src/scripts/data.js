@@ -18,3 +18,13 @@ const API = {
     );
   }
 };
+
+function addJournalPost(entry) {
+  return fetch("http://localhost:3000/entries", {
+    method: "POST",
+    headers:{
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(entry)
+  })
+}

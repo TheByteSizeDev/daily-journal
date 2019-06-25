@@ -1,0 +1,56 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "date": "5/20/2019",
+      "concepts": "Ids, let/const/var, etc",
+      "journal_entry": "No Pop-pop does not get a treat, I just brought you a [bleep]ing pizza.",
+      "mood": "happy"
+    },
+    {
+      "id": 2,
+      "date": "6/20/2019",
+      "concepts": "Lorem Ipsum blah blah blah",
+      "journal_entry": "Te quiero. English, please. I love you! Great, now I'm late.",
+      "mood": "Burn it all down"
+    },
+    {
+      "id": 3,
+      "date": "7/20/2019",
+      "concepts": "Lorem Ipsum blah blah bleh",
+      "journal_entry": "Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear. We never had the chance to.",
+      "mood": "Bleh"
+    },
+    {
+      "id": 4
+    },
+    {
+      "date": "2019-06-24",
+      "concepts": "WO!",
+      "journal_entry": "HEY!",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "date": "2019-06-23",
+      "concepts": "Let's see if this f***ing thing works.$$$",
+      "journal_entry": "Hello",
+      "mood": "excited",
+      "id": 6
+    },
+    {
+      "date": "2019-06-24",
+      "concepts": "Okay lets try this again $$$ ***",
+      "journal_entry": "Hello",
+      "mood": "happy",
+      "id": 7
+    },
+    {
+      "date": "2019-06-22",
+      "concepts": "Hello there %$%",
+      "journal_entry": "boop $^",
+      "mood": "happy",
+      "id": 8
+    }
+  ]
+}

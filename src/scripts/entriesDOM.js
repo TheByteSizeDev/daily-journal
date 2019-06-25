@@ -2,6 +2,7 @@ const journalTextDiv = document.querySelector("#entry_log");
 
 const renderJournalEntries = entries => {
   console.log("entries", entries);
+  journalTextDiv.innerHTML = ""
   for (i = 0; i < entries.length; i++) {
     let finishedDiv = makeJournalEntryComponent(entries[i]); // Passes in each object in array objectJournalEntry
     // console.log("finished div", finishedDiv)
