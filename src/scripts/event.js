@@ -11,7 +11,7 @@ function triggerListener() {
       addJournalPost(entryObj)
         .then(API.getJournalEntries)
         .then(renderJournalEntries);
-    } 
+    }
     //let entryOb = the create journal entry object function (factory)
     //add it to dom with addJournalPost
     //API.getJournalEntries().then(renderJournalEntries); Use part of this
