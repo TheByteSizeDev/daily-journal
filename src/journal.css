@@ -25,3 +25,9 @@ label {
 .drake-container {
     display: flex;
 }
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    margin: 6px;
+}

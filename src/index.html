@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Daily Journal</title>
-    <link rel="stylesheet" href="journal.css">
-</head>
-<body>
-  <div class="drake-container">
-    <img src="Drake2.png">
-    <h1>Daily Journal Entry</h1>
-  </div>  
-  <div class="container">
-    <form action="" class="journal-form"> 
-        <fieldset>
-            <label for="JournalDate">Date of Entry</label>
-            <input type="date" id="date" name="JournalDate">
-        </fieldset>
-        <fieldset>
-            <label for="JournalConcepts">Concepts Covered</label>
-            <textarea class="text-box" id="concepts" wrap="hard" rows="7" type="text" name="JournalConcepts"></textarea>
-        </fieldset>
-        <fieldset>
-            <label for="JournalEntry">Journal Entry</label>
-            <textarea class="text-box" id="entry" wrap="hard" rows="10" type="text" name="JournalEntry"></textarea>
-        </fieldset>
-        <fieldset>
-            <label for="JournalMood">Mood for the day</label>
-            <select id="mood" name="moods">
-                <option value="happy">Happy</option>
-                <option value="excited">Excited</option>
-                <option value="frustrated">Frustrated</option>
-                <option value="Burn">Burn it all down</option>
-                <option value="Neautral">Neutral</option>
-            </select>
-        </fieldset>
-    </form>
+    <link rel="stylesheet" href="journal.css" />
+  </head>
+  <body>
+    <div class="drake-container">
+      <img src="Drake2.png" />
+      <h1>Daily Journal Entry</h1>
     </div>
-<button class="submit-button" id="submit-btn" type="submit" form="DailyJournal" value="submit">Submit Entry</button>
+    <div class="container">
+      <form action="" class="journal-form">
+        <fieldset class:"fieldset">
+          <label for="JournalDate">Date of Entry</label>
+          <input type="date" name="JournalDate" />
+        </fieldset>
+        <fieldset class:"fieldset">
+          <label for="JournalConcepts">Concepts Covered</label>
+          <textarea
+            class="text-box"
+            wrap="hard"
+            rows="7"
+            type="text"
+            name="JournalConcepts"
+          ></textarea>
+        </fieldset>
+        <fieldset class:"fieldset">
+          <label for="JournalEntry">Journal Entry</label>
+          <textarea
+            class="text-box"
+            wrap="hard"
+            rows="10"
+            type="text"
+            name="JournalEntry"
+          ></textarea>
+        </fieldset>
+        <fieldset class:"fieldset">
+          <label for="JournalMood">Mood for the day</label>
+          <select name="moods">
+            <option value="happy">Happy</option>
+            <option value="excited">Excited</option>
+            <option value="frustrated">Frustrated</option>
+            <option value="Burn">Burn it all down</option>
+            <option value="Neautral">Neutral</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <button
+      class="submit-button"
+      type="submit"
+      form="DailyJournal"
+      value="submit"
+    >
+      Submit Entry
+    </button>
+    <div class="search-container" id="search-container">
+      <form>
+        <legend>Filter Journal Entries By Mood:</legend>
+        <fieldset>
+            <input type="radio" name="mood" value="happy" checked /> Happy<br />
+            <input type="radio" name="mood" value="excited" /> Excited<br />
+            <input type="radio" name="mood" value="frustrated" /> Frustrated<br />
+            <input type="radio" name="mood" value="burn" /> Burn It<br />
+            <input type="radio" name="mood" value="neautral" /> Neutral
+        </fieldset>
+      </form>
+    </div>
 
-<article class="entryLog" id="entry_log">
+    <article class="entryLog" id="entry_log"></article>
 
-</article>
-
-<script src="../src/scripts/data.js"></script>
-<script src="../src/scripts/entryComponent.js"></script>
-<script src="../src/scripts/entriesDOM.js"></script>
-<script src="../src/scripts/event.js"></script>
-<script src="../src/scripts/journal.js"></script>
-</body>
+    <script src="../src/scripts/data.js"></script>
+    <script src="../src/scripts/search.js"></script>
+    <script src="../src/scripts/entryComponent.js"></script>
+    <script src="../src/scripts/entriesDOM.js"></script>
+    <script src="../src/scripts/journal.js"></script>
+  </body>
 </html>
-
