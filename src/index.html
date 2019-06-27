@@ -16,12 +16,13 @@
       <form action="" class="journal-form">
         <fieldset class:"fieldset">
           <label for="JournalDate">Date of Entry</label>
-          <input type="date" name="JournalDate" />
+          <input id="date" type="date" name="JournalDate" />
         </fieldset>
         <fieldset class:"fieldset">
           <label for="JournalConcepts">Concepts Covered</label>
           <textarea
             class="text-box"
+            id="concepts"
             wrap="hard"
             rows="7"
             type="text"
@@ -31,6 +32,7 @@
         <fieldset class:"fieldset">
           <label for="JournalEntry">Journal Entry</label>
           <textarea
+            id="entry"
             class="text-box"
             wrap="hard"
             rows="10"
@@ -40,11 +42,11 @@
         </fieldset>
         <fieldset class:"fieldset">
           <label for="JournalMood">Mood for the day</label>
-          <select name="moods">
+          <select id="mood" name="moods">
             <option value="happy">Happy</option>
             <option value="excited">Excited</option>
             <option value="frustrated">Frustrated</option>
-            <option value="Burn">Burn it all down</option>
+            <option value="burn it">Burn it all down</option>
             <option value="Neautral">Neutral</option>
           </select>
         </fieldset>
@@ -52,6 +54,7 @@
     </div>
     <button
       class="submit-button"
+      id= "submit-btn"
       type="submit"
       form="DailyJournal"
       value="submit"
@@ -62,10 +65,10 @@
       <form>
         <legend>Filter Journal Entries By Mood:</legend>
         <fieldset>
-            <input type="radio" name="mood" value="happy" checked /> Happy<br />
+            <input type="radio" name="mood" value="happy" /> Happy<br />
             <input type="radio" name="mood" value="excited" /> Excited<br />
             <input type="radio" name="mood" value="frustrated" /> Frustrated<br />
-            <input type="radio" name="mood" value="burn" /> Burn It<br />
+            <input type="radio" name="mood" value="burn it" /> Burn It<br />
             <input type="radio" name="mood" value="neautral" /> Neutral
         </fieldset>
       </form>
@@ -74,9 +77,10 @@
     <article class="entryLog" id="entry_log"></article>
 
     <script src="../src/scripts/data.js"></script>
-    <script src="../src/scripts/search.js"></script>
+    <script src="../src/scripts/event.js"></script>
     <script src="../src/scripts/entryComponent.js"></script>
     <script src="../src/scripts/entriesDOM.js"></script>
+    <script src="../src/scripts/search.js"></script>
     <script src="../src/scripts/journal.js"></script>
   </body>
 </html>
