@@ -6,10 +6,17 @@
     to get the data and display it.
 */
 
-API.getJournalEntries().then(renderJournalEntries);
+API.getJournalEntries().then(listEntries);
 triggerListener()
+
 
 
 //objectWithGetterMethod.methodToGetData().then(functionThatRendersData)
 
 //renderJournalEntries  makeJournalEntryComponent  getJournalEntries
+
+/*TODO: Journal 8:
+-create button on each journal entry
+create click event for buttons
+on click need to take grab object in API and delete it
+Then it needs to refresh journal entries on page*/

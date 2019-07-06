@@ -9,9 +9,11 @@ let radioButtons = document.getElementsByName("mood");
 radioButtons.forEach(node => {
   node.addEventListener("click", () => {
     const mood = event.target.value;
+    // journalTextDiv.innerHTML = " "
     API.getJournalEntries().then(data => {
       let filterData = data.filter(entries => entries.mood === mood);
-      renderJournalEntries(filterData);
-    });
+      // console.log("What's being brought in?", filterData)
+      listEntries(filterData)
+      })
+    })
   });
-});
