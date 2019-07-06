@@ -28,3 +28,18 @@ function addJournalPost(entry) {
     body: JSON.stringify(entry)
   })
 }
+
+function deleteJournalPost(id) {
+  return fetch(`http://localhost:3000/entries/${id}`, {
+    method: "DELETE",
+    headers:{
+      "Content-Type": "application/json"
+    }
+  })
+}
+
+function getAndDisplayEntry() {
+  journalTextDiv.innerHTML = ""
+  getJournalEntries()
+  .then( journalData => listEntries(journalData))
+}
