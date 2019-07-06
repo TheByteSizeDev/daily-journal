@@ -69,6 +69,20 @@
       "journal_entry": "In other moods",
       "mood": "excited",
       "id": 18
+    },
+    {
+      "date": "2019-07-02",
+      "concepts": "This is a test",
+      "journal_entry": "Too many bros in the coffee shop! (too many bros) ",
+      "mood": "frustrated",
+      "id": 19
+    },
+    {
+      "date": "2019-07-03",
+      "concepts": "Test-o-rino",
+      "journal_entry": "This is a test",
+      "mood": "frustrated",
+      "id": 20
     }
   ]
 }
