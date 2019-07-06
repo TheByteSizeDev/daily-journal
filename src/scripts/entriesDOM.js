@@ -19,17 +19,45 @@ function createEntryComponent(entries) {
   let largerDiv = document.createElement("div")
   let div = document.createElement("div")
   let deleteBtn = document.createElement("button")
+  let editBtn = document.createElement("button")
+  let editDiv = document.createElement("div")
   div.setAttribute("id", `entryContainer-${entries.id}`)
   div.innerHTML = makeJournalEntryComponent(entries)
   largerDiv.appendChild(div)
   deleteBtn.textContent = "delete"
+  editBtn.textContent = "edit"
+  editDiv.setAttribute("id", `editFormContainer-${entries.id}`)
   deleteBtn.addEventListener("click", () => {
     deleteJournalPost(entries.id)
     .then( data => {
       getAndDisplayEntry(data)
     })
   })
+  editBtn.addEventListener("click", () => {
+    let editForm = makeEditForm(entries)
+    console.log(editForm)
+    addEditFormToDOM(editDiv.id, editForm)
+    
+  })
   largerDiv.appendChild(deleteBtn)
-  // console.log("this div", largerDiv)
+  largerDiv.appendChild(editBtn)
+  largerDiv.appendChild(editDiv)
   return largerDiv
+}
+
+function addEditFormToDOM(editContainer, editForm) {
+  document.querySelector(`#${editContainer}`).innerHTML = editForm
+  document.querySelector("#saveBtn").addEventListener("click", () => {
+  let date = document.querySelector("#editDate").value
+  let concepts = document.querySelector("#editConcepts").value
+  let journal = document.querySelector("#editJournal").value
+  let mood = document.querySelector("#editMood").value
+  let id = document.querySelector("#entry-id").value
+  let updatedEntry = makeJournalObject(date, concepts, journal, mood)
+  updatedEntry.id = id
+  updateJournalPost(updatedEntry)
+  .then( () => {
+    getAndDisplayEntry()
+  })
+})
 }

@@ -69,6 +69,13 @@
       "journal_entry": "In other moods",
       "mood": "excited",
       "id": 18
+    },
+    {
+      "date": "2019-07-06",
+      "concepts": "There is a lot of bros in this coffee shop.",
+      "journal_entry": "Too many bros in the coffee shop! (too many bros) ",
+      "mood": "burn it",
+      "id": 19
     }
   ]
 }
