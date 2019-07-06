@@ -39,7 +39,7 @@ function deleteJournalPost(id) {
 }
 
 function updateJournalPost(updatedPost) {
-  return fetch(`http://localhost:8088/entries/${updatedPost.id}`, {
+  return fetch(`http://localhost:3000/entries/${updatedPost.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"

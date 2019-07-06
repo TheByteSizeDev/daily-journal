@@ -6,7 +6,7 @@
     to get the data and display it.
 */
 
-// API.getJournalEntries().then(listEntries);
+API.getJournalEntries().then(listEntries);
 runRadioButtons()
 triggerListener()
 
@@ -27,8 +27,8 @@ Then it needs to refresh journal entries on page*/
 ****add text to the button
 ****need to append the div for the form element
 ****need to create the form element as part of it with the save button (possibly as another function)
-- then need to create click event that adds form to DOM
+**** Then need to create click event that adds form to DOM
 need to make sure that the value from the form is populated from the text
-- need to add a click event to the form element save button that triggers PUT command
+****need to add a click event to the form element save button that triggers PUT command
 Means I need to grab the id
 */

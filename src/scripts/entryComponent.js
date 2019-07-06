@@ -11,11 +11,11 @@ const makeJournalEntryComponent = journalEntry => {
 const makeEditForm = (entry) => {
   return `
     <div id="editForm-${entry.id}>
-      <input type="hidden" id="entry-id" value="${entry.id}">
-      <label for="JournalDate">Date of Entry</label>
-        <input id="editDate" type="date" name="JournalDate" value="${entry.date}"/>
+    <label for="JournalDate">Date of Entry</label>
+      <input id="editDate" type="date" name="JournalDate" value="${entry.date}"/>
+      <input id="entryId" type="hidden" value="${entry.id}">
       <label for="journalConcepts">Concepts Covered</label>
-        <input id="editConcepts" type="text" name="journalConcepts value="${entry.concepts}"/>
+        <input id="editConcepts" type="text" name="journalConcepts" value="${entry.concepts}"/>
       <label for="journalEntry">Journal Entry</label>
         <input id="editEntry" type="text" name="journalEntry" value="${entry.journal_entry}"/>
       <label for="JournalMood">Mood for the day</label>

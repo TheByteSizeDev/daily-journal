@@ -35,7 +35,6 @@ function createEntryComponent(entries) {
   })
   editBtn.addEventListener("click", () => {
     let editForm = makeEditForm(entries)
-    console.log(editForm)
     addEditFormToDOM(editDiv.id, editForm)
     
   })
@@ -47,12 +46,14 @@ function createEntryComponent(entries) {
 
 function addEditFormToDOM(editContainer, editForm) {
   document.querySelector(`#${editContainer}`).innerHTML = editForm
+  console.log(editForm)
   document.querySelector("#saveBtn").addEventListener("click", () => {
+  console.log("this was clicked")
   let date = document.querySelector("#editDate").value
   let concepts = document.querySelector("#editConcepts").value
-  let journal = document.querySelector("#editJournal").value
+  let journal = document.querySelector("#editEntry").value
   let mood = document.querySelector("#editMood").value
-  let id = document.querySelector("#entry-id").value
+  let id = document.querySelector("#entryId").value
   let updatedEntry = makeJournalObject(date, concepts, journal, mood)
   updatedEntry.id = id
   updateJournalPost(updatedEntry)
